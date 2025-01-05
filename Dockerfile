@@ -9,6 +9,5 @@ COPY . .
 RUN python -m pip install ".[cpu,cli]"
 RUN rembg d
 
-EXPOSE 7000
-ENTRYPOINT ["rembg"]
-CMD ["--help"]
+EXPOSE 5000
+ENTRYPOINT ["rembg -s 5000"]
